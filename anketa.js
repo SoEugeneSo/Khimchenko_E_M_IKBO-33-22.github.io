@@ -60,7 +60,7 @@ function validateForm(event) {
         // Ждем 2 секунды перед переходом
         setTimeout(function () {
             // Перенаправляем пользователя на страницу success.html
-            window.location.href = 'mainpage.html';
+            window.location.href = 'index.html';
         }, 2000);
     }
 }
