@@ -189,12 +189,6 @@ function removeFromCart(productId) {
 
     if (existingProduct && existingProduct.quantity > 0) {
         existingProduct.quantity -= 1;
-
-        if (existingProduct.quantity === 0) {
-            // Если количество стало 0, удаляем продукт из массива
-            cartItems = cartItems.filter(item => item.productId !== productId);
-        }
-
         updateCartCount();
         updateCartItems();
         updateProductQuantity(productId, existingProduct.quantity);
